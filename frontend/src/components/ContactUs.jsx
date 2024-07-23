@@ -30,7 +30,7 @@ const ContactUs = () => {
 
     try {
       // Send POST request to backend API
-      const response = await axios.post('http://localhost:8000/api/contact', contactData);
+      const response = await axios.post('https://greenrootsrenewable.onrender.com/api/contact', contactData);
 
       // Handle successful response
       if (response.status === 201) {
