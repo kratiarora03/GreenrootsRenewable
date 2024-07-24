@@ -16,36 +16,17 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchThumbnail = async () => {
       try {
-        const videoId = "KvWSCzrvSA0"; 
-        const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; 
-        const response = await axios.get(
-          `https://www.googleapis.com/youtube/v3/videos`,
-          {
-            params: {
-              part: "snippet",
-              id: videoId,
-              key: apiKey
-            }
-          }
-        );
-
-        // Log the entire response data for debugging
-        console.log(response.data);
-
-        if (response.data.items && response.data.items.length > 0) {
-          const thumbnailUrl = response.data.items[0].snippet.thumbnails.medium.url;
-          setThumbnailUrl(thumbnailUrl);
-        } else {
-          console.error("No items found in response");
-        }
+        const response = await axios.get('/api/youtube-thumbnail');
+        const thumbnailUrl = response.data.thumbnailUrl;
+        setThumbnailUrl(thumbnailUrl);
       } catch (error) {
-        console.error("Error fetching YouTube video thumbnail:", error);
+        console.error('Error fetching YouTube video thumbnail:', error);
       }
     };
-
+  
     fetchThumbnail();
   }, []);
-
+  
 
 
   return (
