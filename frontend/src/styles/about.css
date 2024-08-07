@@ -245,7 +245,6 @@
 
 .video_description h2 {
   @extend .title;
-  
 }
 
 .video_description p {
@@ -265,6 +264,67 @@
   height: 320px;
   border: none;
 }
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 1024px) {
+  .youtube_video {
+    flex-direction: column; /* Stack vertically for smaller screens */
+    align-items: center; /* Center-align items horizontally */
+    padding: 20px;
+  }
+
+  .video_description {
+    margin-right: 0;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Adjust margin for spacing */
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .video_description p {
+    text-align: center; /* Center-align paragraph text */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .video_frame {
+    width: 100%; /* Ensure video frame takes full width */
+    text-align: center; /* Center-align video frame */
+  }
+
+  .video_frame iframe {
+    width: 100%; /* Full width of container */
+    height: 320px; /* Adjust height as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube_video {
+    padding: 15px;
+  }
+
+  .video_description h2 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  .video_description p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube_video {
+    padding: 10px;
+  }
+
+  .video_description h2 {
+    font-size: 1.2em; /* Further adjust font size */
+  }
+
+  .video_description p {
+    font-size: 0.9em; /* Further adjust font size */
+  }
+}
+
 
 /* Why Choose Us Section */
 .why_choose_us {
