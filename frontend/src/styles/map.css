@@ -10,8 +10,8 @@
 
 .map-container {
   width: 100%;
-  max-width: 400px; /* Adjust to your desired size */
-  height: 250px; /* Adjust to your desired size */
+  max-width: 300px; /* Adjust to your desired size */
+  height: 200px; /* Adjust to your desired size */
   border: 2px solid #333; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Hide overflowing map content */

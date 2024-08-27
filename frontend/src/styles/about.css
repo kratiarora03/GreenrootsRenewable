@@ -189,7 +189,7 @@
 .award_card img {
   max-width: 100%;
   height: auto;
-  max-height: 150px; /* Adjust for image size */
+  max-height: 220px; /* Adjust for image size */
   border-radius: 12px;
   margin-bottom: 20px;
 }

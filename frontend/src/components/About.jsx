@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/about.css";
 import founderImage from "../assets/about/founder.jpeg";
-import awardImage1 from "../assets/about/award1.png";
-import awardImage2 from "../assets/about/award2.png";
-import awardImage3 from "../assets/about/award3.png";
+import awardImage1 from "../assets/about/award1.jpg";
+import awardImage2 from "../assets/about/award2.jpg";
+import awardImage3 from "../assets/about/award3.jpg";
 import awardImage4 from "../assets/about/epc.jpg";
 import solar from "../assets/about/solar-panel.webp";
 import CountUp from "./CountUp";
@@ -131,20 +131,21 @@ const AboutUs = () => {
           <div className="awards_grid">
             <div className="award_card">
               <img src={awardImage1} alt="Award 1" />
-              <p className="award_title">Rooftop EPC Company of the Year 2020</p>
+              <p className="award_title">Solar EPC Company of the Year 2024 - Residential [PLATINUM]</p>
             </div>
             <div className="award_card">
               <img src={awardImage2} alt="Award 2" />
-              <p className="award_title">Ranked among the top 30 solar rooftop companies in India 2020-2021 , 2022,2023 (Three Consecutive Years)</p>
+              <p className="award_title">Solar EPC Company of the Year 2024 - Commercial [GOLD]</p>
             </div>
             <div className="award_card">
               <img src={awardImage3} alt="Award 3" />
-              <p className="award_title">Rooftop EPC Company of the Year 2022</p>
+              <p className="award_title">Solar EPC Company of the Year 2024 - Industrial [Silver]</p>
             </div>
             <div className="award_card">
               <img src={awardImage4} alt="Award 4" />
-              <p className="award_title">Rooftop EPC Company of the Year 2023</p>
+              <p className="award_title">Rooftop EPC Company of the Year 2023 - C&I [PLATINUM]</p>
             </div>
+            
           </div>
         </div>
         {/* End Awards and Achievements Section */}
