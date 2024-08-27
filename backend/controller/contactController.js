@@ -5,6 +5,22 @@ const contactController = async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   try {
+    // Define the start and end of the current day
+    const startOfDay = new Date();
+    startOfDay.setHours(0, 0, 0, 0);
+    const endOfDay = new Date();
+    endOfDay.setHours(23, 59, 59, 999);
+
+    // Check the number of contacts from the same email within the current day
+    const contactCount = await Contact.countDocuments({
+      email,
+      createdAt: { $gte: startOfDay, $lte: endOfDay }
+    });
+
+    if (contactCount >= 2) {
+      return res.status(400).json({ message: 'You have already sent two contact requests today' });
+    }
+
     // Save contact information to database
     const newContact = new Contact({ name, email, subject, message });
     await newContact.save();

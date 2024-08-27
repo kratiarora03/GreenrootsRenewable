@@ -12,32 +12,22 @@ import CountUp from "./CountUp";
 const AboutUs = () => {
   const [thumbnailUrl, setThumbnailUrl] = useState("");
 
+
   useEffect(() => {
     const fetchThumbnail = async () => {
       try {
-        const videoId = "KvWSCzrvSA0"; // Replace with your YouTube video ID
-        const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // Use environment variable for API Key
-        const response = await axios.get(
-          `https://www.googleapis.com/youtube/v3/videos`,
-          {
-            params: {
-              part: "snippet",
-              id: videoId,
-              key: apiKey
-            }
-          }
-        );
-        console.log(response.data); // Log the response data
-        const thumbnailUrl =
-          response.data.items[0]?.snippet.thumbnails.medium.url;
+        const response = await axios.get('/api/youtube-thumbnail');
+        const thumbnailUrl = response.data.thumbnailUrl;
         setThumbnailUrl(thumbnailUrl);
       } catch (error) {
-        console.error("Error fetching YouTube video thumbnail:", error);
+        console.error('Error fetching YouTube video thumbnail:', error);
       }
     };
   
     fetchThumbnail();
   }, []);
+  
+
 
   return (
     <div id="aboutus" className="aboutus">

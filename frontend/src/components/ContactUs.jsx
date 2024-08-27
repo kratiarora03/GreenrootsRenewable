@@ -3,7 +3,7 @@ import '../styles/contactus.css';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
-import contactImage from '../assets/main/GetIntouch.png'; // Make sure to add the image in your assets
+import contactImage from '../assets/main/GetIntouch.png'; // Ensure the image is in the correct path
 
 const ContactUs = () => {
   const [name, setName] = useState('');
@@ -30,11 +30,11 @@ const ContactUs = () => {
 
     try {
       // Send POST request to backend API
-      const response = await axios.post('http://localhost:8000/api/contact', contactData);
+      const response = await axios.post('https://greenrootsrenewable.onrender.com/api/contact', contactData);
 
       // Handle successful response
       if (response.status === 201) {
-        toast.success('We will reach out soon!');
+        toast.success('Your message has been sent successfully. We will reach out soon!');
         setName('');
         setEmail('');
         setSubject('');
@@ -56,8 +56,8 @@ const ContactUs = () => {
           <img src={contactImage} alt="Contact Us" />
         </div>
         <div className="form-container">
-          <h6>Feel free to contact us anytime.</h6>
-          <h6>We will get back to you</h6>
+          <h2>Feel free to contact us anytime</h2>
+          <h4>We will get back to you as soon as possible</h4>
           <form onSubmit={handleSubmit}>
             <label>
               Name:
