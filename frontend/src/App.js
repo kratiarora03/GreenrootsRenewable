@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga4';
 import Home from './pages/Home.jsx';
 
-// Initialize Google Analytics with your tracking ID
+// Initialize Google Analytics with tracking id from mail
 ReactGA.initialize('G-41BQ0M7WMB');
 
 function PageTracker() {
