@@ -1,14 +1,14 @@
 /* carousel.css */
 
 .customer-carousel {
-  padding: 40px 0;
+  padding: 21px 0;
   background-color: #ffffff; /* Ensure a clean background */
 }
 
 .carousel-title {
   text-align: center; /* Center the title */
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
   color: #1C160C; /* Darker color for the title to match the theme */
   font-weight: bold;
 }

@@ -36,18 +36,18 @@ const CountUpComponent = () => {
           <p className="countup-description">Rajasthan Rooftop Solar EPC Company</p>
         </div>
         <div className="countup-card">
-          <CountUp end={isInView ? 7 : 0} duration={4} className="countup-number" />
+          <CountUp end={isInView ? 9 : 0} duration={4} className="countup-number" />
           <p className="countup-description">Years of Experience</p>
         </div>
         <div className="countup-card" ref={inViewRef}>
-          {inView && <CountUp end={5} duration={4} className="countup-number" />}
+          {inView && <CountUp end={10} duration={4} className="countup-number" />}
           <span className="countup-unit"> states</span>
           <p className="countup-description">PAN India presence</p>
         </div>
         <div className="countup-card">
-          <CountUp end={isInView ? 100 : 0} duration={4} className="countup-number" />
+          <CountUp end={isInView ? 250 : 0} duration={4} className="countup-number" />
           <span className="countup-plus">+</span>
-          <p className="countup-description">Solar Projects</p>
+          <p className="countup-description"> Number of Solar Projects</p>
         </div>
         <div className="countup-card" ref={inViewRef}>
           {inView && <CountUp end={50} duration={4} className="countup-number" />}
@@ -55,7 +55,7 @@ const CountUpComponent = () => {
           <p className="countup-description">Solar Projects Installed</p>
         </div>
         <div className="countup-card" ref={inViewRef}>
-          {inView && <CountUp end={40} duration={4} className="countup-number" />}
+          {inView && <CountUp end={55} duration={4} className="countup-number" />}
           <span className="countup-unit"> MW</span>
           <p className="countup-description">EPC Solar Capacity</p>
         </div>
@@ -65,7 +65,7 @@ const CountUpComponent = () => {
           <p className="countup-description">Open Access Capacity</p>
         </div>
         <div className="countup-card">
-          <div className="countup-number">40+</div>
+          <div className="countup-number">55+</div>
           <p className="countup-description">Team Size</p>
         </div>
       </div>

@@ -60,13 +60,6 @@
   max-width: 50%;
 }
 
-.aboutus_title {
-  @extend .title;
-}
-
-.aboutus_short_description {
-  @extend .paragraph;
-}
 
 .aboutus_stats {
   display: flex;
@@ -105,7 +98,6 @@
 }
 
 .section_title {
-  @extend .title;
   text-align: center;
   margin-bottom: 25px;
   position: relative;
@@ -155,13 +147,7 @@
   text-align: center;
 }
 
-.founder_content h3 {
-  @extend .title;
-}
 
-.founder_content p {
-  @extend .paragraph;
-}
 
 /* Awards Section */
 .awards_grid {
@@ -194,13 +180,6 @@
   margin-bottom: 20px;
 }
 
-.award_title {
-  @extend .title;
-}
-
-.award_card p {
-  @extend .paragraph;
-}
 
 /* Company Images Grid */
 .company-images-grid {
@@ -243,12 +222,8 @@
   margin-right: 40px;
 }
 
-.video_description h2 {
-  @extend .title;
-}
 
 .video_description p {
-  @extend .paragraph;
   text-align: left;
   margin-left: 15px;
   margin-bottom: 20px;
@@ -328,7 +303,7 @@
 
 /* Why Choose Us Section */
 .why_choose_us {
-  padding: 60px 20px;
+  padding: 16px 20px;
   background-color: #ffffff; /* Light background for contrast */
   color: #333; /* Dark text color for readability */
 }
@@ -340,7 +315,6 @@
 }
 
 .section_title {
-  @extend .title;
   font-size: 1.5em; /* Larger title for emphasis */
   color: #1c160c; /* Deep color for prominence */
   margin-bottom: 20px;
@@ -350,10 +324,9 @@
 }
 
 .section_text {
-  @extend .paragraph;
   font-size: 1.2em; /* Consistent paragraph font size */
-  color: #666; /* Slightly lighter color for the text */
-  text-align: center; /* Center-align text for a clean look */
+  color: #3b3333;
+    text-align: left;/* Center-align text for a clean look */
 }
 
 /* Responsive Adjustments */

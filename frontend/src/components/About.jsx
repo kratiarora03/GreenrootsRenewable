@@ -50,14 +50,14 @@ const AboutUs = () => {
                 <div className="aboutus_stat">
                   <div className="stat_icon">🌟</div>
                   <div className="stat_info">
-                    <h3 className="stat_number">100+</h3>
+                    <h3 className="stat_number">250+</h3>
                     <p className="stat_label">Projects Completed</p>
                   </div>
                 </div>
                 <div className="aboutus_stat">
                   <div className="stat_icon">👥</div>
                   <div className="stat_info">
-                    <h3 className="stat_number">40+</h3>
+                    <h3 className="stat_number">55+</h3>
                     <p className="stat_label">Employees Working</p>
                   </div>
                 </div>
