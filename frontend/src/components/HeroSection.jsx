@@ -1,7 +1,7 @@
 // components/HeroCarousel.jsx
 import React from 'react';
 import '../styles/hero.css';
-import hero3 from '../assets/main/3.png';
+import hero3 from '../assets/main/trial.png';
 import ScrollingStrip from './ScrollingStrip'; // Import scrolling strip
 
 const HeroCarousel = () => {

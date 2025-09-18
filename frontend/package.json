@@ -62,6 +62,7 @@
     ]
   },
   "devDependencies": {
+    "caniuse-lite": "^1.0.30001743",
     "tailwindcss": "^3.4.4"
   }
 }
