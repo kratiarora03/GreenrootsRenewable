@@ -5,8 +5,8 @@ import '../styles/ScrollingStrip.css';
 const offerings = [
   { label: 'PM Surya Ghar Yojana', url: 'https://pmsuryaghar.gov.in/#/' },
   { label: 'PM KUSUM Scheme', url: 'https://pmkusum.mnre.gov.in/#/landing' },
-  { label: 'National Solar Rooftop Portal', url: 'https://solarrooftop.gov.in' },
-  { label: 'India Renewable Energy Dashboard', url: 'https://nreda.gov.in' },
+  { label: 'MNRE for SOLAR', url: 'https://mnre.gov.in/en/solar/' },
+   { label: 'Subsidy for SURYA GHAR', url: 'https://pmsuryaghar.in/solar-system-price-with-subsidy-in-rajasthan/' },
 ];
 
 const ScrollingStrip = () => {
