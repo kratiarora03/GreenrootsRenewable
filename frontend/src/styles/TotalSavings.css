@@ -16,7 +16,7 @@
   justify-content: center;
   padding-right: 20px;
   margin-right: 40px; /* Adjusted margin */
-   margin-left: 86px;
+   /* margin-left: 86px; */
 }
 
 .solar-image {
@@ -113,7 +113,7 @@ button:hover {
   .image-container {
     flex: 0 0 auto;
     padding-right: 0;
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    margin-bottom: 20px;
   }
 
   .total-savings-container {

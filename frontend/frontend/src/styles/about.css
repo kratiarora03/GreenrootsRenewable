@@ -416,6 +416,10 @@
     font-size: 1em;
   }
 
+  .aboutus_container{
+    padding: 10px;
+  }
+
   .aboutus_image {
     height: 250px;
   }
